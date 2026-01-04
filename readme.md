@@ -19,7 +19,7 @@ The goal of this repository is not just to solve problems, but to **identify cor
 
 ## 📂 Folder Structure (Pattern Oriented)
 
-
+```
 .
 ├── Arrays
 │   ├── Prefix_Sum
@@ -54,4 +54,6 @@ The goal of this repository is not just to solve problems, but to **identify cor
 └── Trees
     ├── Binary_Tree
     └── BST
+
+    
 
