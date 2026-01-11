@@ -8,13 +8,15 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+
+    - name: Show workspace (debug)
+      run: |
+        echo "Workspace contents:"
+        ls -R
 
     - name: Compile
-      # run: g++ /Trees/Trie/Trie_all_concepts.cpp -o tree
-      run : g++ Trees/Trie/Trie_all_concepts.cpp -o tree
+      run: g++ Trees/Trie/Trie_all_concepts.cpp -o tree
 
     - name: Run
       run: ./tree
-
-
