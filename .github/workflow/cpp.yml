@@ -1,0 +1,17 @@
+name: Run C++ Code
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Compile
+      run: g++ ./Trees/Trie/Trie_all_Concepts.cpp -o tree
+
+    - name: Run
+      run: ./tree
