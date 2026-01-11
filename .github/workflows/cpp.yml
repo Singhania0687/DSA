@@ -11,7 +11,8 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Compile
-      run: g++ /Trees/Trie/Trie_all_concepts.cpp -o tree
+      # run: g++ /Trees/Trie/Trie_all_concepts.cpp -o tree
+      run : g++ Trees/Trie/Trie_all_concepts.cpp -o tree
 
     - name: Run
       run: ./tree
